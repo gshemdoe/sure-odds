@@ -1,26 +1,26 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
-  ogImage: "astropaper-og.jpg",
+  website: "https://odds-za-ushindi.co.tz/", // replace this with your deployed domain
+  author: "Blackberry 255",
+  desc: "Site namba moja kwa Odds za uhakika Tanzania, Kwa Odds za Leo na Odds za Ushindi, tembelea site yetu kila siku.",
+  title: "ODDS za USHINDI",
+  ogImage: "odds-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
 export const LOCALE = {
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+  lang: "sw", // html lang code. Set this empty and default will be "en"
+  langTag: [], // BCP 47 Language Tags. Set this empty [] to use the environment default
 } as const;
 
 export const LOGO_IMAGE = {
   enable: false,
-  svg: true,
+  svg: false,
   width: 216,
-  height: 46,
+  height: 48,
 };
 
 export const SOCIALS: SocialObjects = [
@@ -28,61 +28,61 @@ export const SOCIALS: SocialObjects = [
     name: "Github",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: ` ${SITE.title} on Github`,
-    active: true,
+    active: false,
   },
   {
     name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://facebook.com/odds_za_ushindi",
     linkTitle: `${SITE.title} on Facebook`,
     active: true,
   },
   {
     name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://instagram.com/odds_za_ushindi",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
   {
     name: "LinkedIn",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://linkedin.com/in/odds_za_ushindi",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:shemdoe@yandex.com",
     linkTitle: `Send an email to ${SITE.title}`,
-    active: false,
+    active: true,
   },
   {
     name: "Twitter",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://x.com/odds_za_ushindi",
     linkTitle: `${SITE.title} on Twitter`,
-    active: false,
+    active: true,
   },
   {
     name: "Twitch",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://twitch.com/odds_za_ushindi",
     linkTitle: `${SITE.title} on Twitch`,
-    active: false,
+    active: true,
   },
   {
     name: "YouTube",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://youtube.com/channel/@odds_za_ushindi",
     linkTitle: `${SITE.title} on YouTube`,
     active: false,
   },
   {
     name: "WhatsApp",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://wa.me/+255687976696",
     linkTitle: `${SITE.title} on WhatsApp`,
-    active: false,
+    active: true,
   },
   {
     name: "Snapchat",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://snapchat.com/odds_za_ushindi",
     linkTitle: `${SITE.title} on Snapchat`,
-    active: false,
+    active: true,
   },
   {
     name: "Pinterest",
@@ -92,7 +92,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "TikTok",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://tiktok.com/odds_za_ushindi",
     linkTitle: `${SITE.title} on TikTok`,
     active: false,
   },
@@ -134,9 +134,9 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Telegram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://telegram.me/mkeka_wa_leo",
     linkTitle: `${SITE.title} on Telegram`,
-    active: false,
+    active: true,
   },
   {
     name: "Mastodon",
