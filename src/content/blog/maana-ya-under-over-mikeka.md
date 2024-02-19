@@ -6,7 +6,7 @@ title: Jifunze Aina za Masoko ya Kubet Over/Under
 slug: maana-ya-under-over-mikeka
 featured: true
 draft: false
-canonicalURL: "https://odds-za-ushindi.co.tz/maana-ya-under-over-mikeka"
+canonicalURL: "https://odds-za-ushindi.top/maana-ya-under-over-mikeka"
 tags: [masoko, over, under, over25, under25]
 description: Jifunze aina za masoko ya Over/Under. Maana ya Over 2.5, 1.5, 3.5. Maana ya Under 4.5, 3.5, 2.5, 1.5
 ---

@@ -8,7 +8,7 @@ featured: false
 draft: false
 tags: [masoko, doublechance, halftime, fulltime, gg_ng]
 description: Jifunze aina za masoko ya GG/NG. Maana ya Halftime/Fulltime, Double Chance 1X, X2, 12
-canonicalURL: "https://odds-za-ushindi.co.tz/maana-ya-gg-ng-halftime-fulltime"
+canonicalURL: "https://odds-za-ushindi.top/maana-ya-gg-ng-halftime-fulltime"
 ---
 
 Katika kubashiri mpira wa miguu, kuna aina mbalimbali za bets ambazo zinaweza kutumika kuweka dau na kufurahia michezo. Tunachunguza chaguzi kama GG/NG, Halftime/Fulltime, Double Chance 1X, Double Chance X2, na Double Chance 12.
