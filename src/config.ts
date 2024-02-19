@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://odds-za-ushindi.co.tz/", // replace this with your deployed domain
+  website: "https://odds-za-ushindi.top/", // replace this with your deployed domain
   author: "Blackberry 255",
   desc: "Site namba moja kwa Odds za uhakika Tanzania, Kwa Odds za Leo na Odds za Ushindi, tembelea site yetu kila siku.",
   title: "ODDS za USHINDI",
