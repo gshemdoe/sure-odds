@@ -9,7 +9,14 @@
   >
     *Mikeka ya Leo Bado Haijaandaliwa. Rudi baada ya mda kidogo
   </h3>
-  <ul id="mikeka-cont"></ul>
+  <ul id="mikeka-cont">
+    <div id="loader">
+      <div style="width: 150px; height: 150px;">
+        <div class="loading loading--full-height"></div>
+      </div>
+      <h6>Inatafuta mikeka ya leo....</h6>
+    </div>
+  </ul>
   <slot />
 </div>
 
@@ -29,20 +36,53 @@
 
 <style>
   ul#mikeka-cont {
-    width: 100%;
+    width: 92%;
+    height: 540px;
+    overflow-y: scroll;
     max-width: 740px;
+    border: 2px solid #808080;
     margin: 12px auto;
+    padding: 6px;
+  }
+
+  #loader {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #f5f5f5;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loading::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 16px solid #dddddd;
+    border-top-color: #ff6b01;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+  }
+
+  @keyframes loading {
+    to {
+      transform: rotate(1turn);
+    }
   }
 </style>
 
 <script>
   const mikekaCont = document.getElementById("mikeka-cont");
   const errorMsg = document.getElementById("error");
+  const loader = document.getElementById("loader");
   try {
     const res = await fetch(
       "https://mikeka-ya-uhakika-production.up.railway.app/odds-blog"
@@ -60,6 +100,7 @@
         el.innerHTML = `<span class="time" style="display: block; border-bottom: #d3d3d3 solid 1px; color: gray; font-size: small; padding: 8px 4px;">${mk.time} ${mk.siku} - ${mk.league}</span><span class="match" style="display: block; text-align: center; color: black; font-size: large; font-weight: bold; margin-top: 16px;">${mk.match}</span><span class="tip" onclick="window.open('http://bet-link.top/betway/register')" style="display: flex; justify-content: center; align-items: center; color: white; font-size: large; font-weight: bold; background-color: green; width: 120px; min-width: auto; padding: 8px 16px; margin: 16px auto 24px auto; border-radius: 8px;">${mk.tip}</span><span onclick="window.open('http://bet-link.top/betway/register')" class="link" style="display: block; border-top: #d3d3d3 solid 1px; color: rgb(0, 108, 172); font-size: 14px; font-weight: bold; cursor: pointer; text-align: center; padding: 8px 4px;">Weka Bet Hapa (200% Bonus)</span>`;
         mikekaCont?.appendChild(el);
       }
+      loader.style.display = "none";
       console.log(data);
     }
   } catch (error) {
